@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "mocha@10.2.0",
+      "destination": "wwwroot/mocha/"
+    }
+  ]
+}

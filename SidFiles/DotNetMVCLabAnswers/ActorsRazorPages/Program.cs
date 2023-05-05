@@ -1,7 +1,10 @@
+using ActorsRazorPages.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<IData, Data>();
 
 var app = builder.Build();
 
@@ -21,5 +24,4 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
 app.Run();

@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+<link rel="stylesheet" type="text/css" href="~/css/style.css" />
+<title>ShowCities</title>
+</head>
+
+<body>
+    <h1>Select City</h1>
+    @foreach (var item in ViewBag.Cities)
+    {       <h2>
+                <a asp-action="ShowDataForCity" asp-route-cityname="@item.Key">@item.Key</a>
+            </h2>
+    }
+</body>
